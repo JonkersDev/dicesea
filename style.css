@@ -1,8 +1,8 @@
 *{ margin: 0; padding: 0; box-sizing: border-box; }
 
-body { background: #333; width: 100vw; height: 100vh; display: grid; justify-content: center; align-content: center; }
+body { background: #333; width: 100vw; width: 100dvw; height: 100vh; height: 100dvh; display: grid; justify-content: center; align-content: center; }
 
-body section#map { width: 50vw; width: 100dvw; width: 90dvmax; height: 50vh; height: 100dvh; height: 90dvmin; border: 1px solid red; }
+body section#map { width: 95vmax; width: 95dvw; width: 95dvmax; height: 95vmin; height: 95dvh; height: 95dvmin; border: 1px solid red; }
 
 svg { height: 100%; width: 100%; }
 
