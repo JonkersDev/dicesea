@@ -1,0 +1,32 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #333; width: 100vw; height: 100vh; overflow: hidden; display: grid; justify-content: center; align-content: center; }
+
+body section#map { width: 90dvmax; height: 90dvmin; border: 1px solid red; }
+
+svg { height: 100%; width: 100%; }
+
+.tile:hover .wave { fill: #5df !important; }
+
+.groep .tile { opacity: .75; transition: .5s ease; transform-box: fill-box; transform-origin: center; transform: rotateX(90deg) translate(-0.1404264px , 2.5875099px); }
+
+.wave1 .tile { animation: reveal .5s .5s ease forwards; }
+.wave2 .tile { animation: reveal .5s .7s ease forwards; }
+.wave3 .tile { animation: reveal .5s .9s ease forwards; }
+.wave4 .tile { animation: reveal .5s 1.1s ease forwards; }
+.wave5 .tile { animation: reveal .5s 1.3s ease forwards; }
+.wave6 .tile { animation: reveal .5s 1.5s ease forwards; }
+.wave7 .tile { animation: reveal .5s 1.7s ease forwards; }
+.wave8 .tile { animation: reveal .5s 1.9s ease forwards; }
+.wave9 .tile { animation: reveal .5s 2.1s ease forwards; }
+
+@keyframes reveal { 100% { transform: rotateX(0deg) translate(-0.1404264px , 2.5875099px); } }
+
+.tile.locked { opacity: .5; }
+.tile.locked .water { stroke: #000; }
+
+.water { stroke: #aef; stroke-width: 0.05; }
+
+@media only screen and (max-width: 100vh) {
+    section { transform: rotate(90deg); }
+}
